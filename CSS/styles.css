@@ -1,8 +1,82 @@
+/* global start */
 :root {
-    --main-color: rgb(16, 202, 183);
-    --secondary-color: rgb(44, 71, 85);
+    --main-color: #10cab7;
+    --secondary-color: #2c4755;
+    --third-color: #575757;
+    --background-color: #f6f6f6;
     font-family: "Work Sans", Arial, Helvetica;
 }
+
+p {
+    line-height: 1.8;
+}
+
+.special {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.special > h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #f6f6f6;
+    font-size: 160px;
+    font-weight: 800;
+    letter-spacing: -10px;
+    z-index: -1;
+}
+
+.special > h2::selection {
+    background-color: var(--main-color);
+}
+
+.special > p {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translateX(-50%);
+    color: var(--third-color);
+    font-size: 25px;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.special > p::selection {
+    background-color: var(--main-color);
+}
+
+@media (max-width: 1200px) {
+    .special > p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .special > h2 {
+        font-size: 140px;
+    }
+
+    .special > p {
+        font-size: 16px;
+        top: 55%;
+    }
+}
+
+@media (max-width: 576px) {
+    .special > h2 {
+        font-size: 100px;
+    }
+
+    .special > p {
+        font-size: 12px;
+        top: 39%;
+    }
+}
+/* global end */
 
 /* container start */
 @media (min-width: 576px) and (max-width: 768px) {
@@ -209,8 +283,9 @@ img.logo {
 section.work {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 110px;
+    gap: 90px;
     padding: 60px 30px;
+    background-color: var(--background-color);
 }
 
 section.work .box {
@@ -241,6 +316,7 @@ section.work h3::selection {
 section.work p {
     font-size: 15px;
     text-align: center;
+    color: var(--third-color);
 }
 
 section.work p::selection {
@@ -253,3 +329,95 @@ section.work p::selection {
     }
 }
 /* work end */
+
+/* services start */
+section.services {
+    padding: 0 50px 50px 50px;
+}
+
+section.services .container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+    padding: 0 20px; 
+}
+
+section.services .container h3 {
+    color: #1f2021;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+section.services .container h3::selection {
+    background-color: var(--main-color);
+}
+
+section.services i {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.srv {
+    margin-bottom: 40px;
+}
+
+.srv div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+section.services .container p {
+    font-size: 15px;
+    color: #4d4c4c;
+}
+
+section.services .container p::selection {
+    background-color: var(--main-color);
+}
+
+section.services .image-container img {
+    width: 260px;
+    height: 400px;
+}
+
+section.services .image-container {
+    position: relative;
+}
+
+section.services .image-container::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 80px;
+    height: calc(100% + 80px);
+    background-color: var(--secondary-color);
+    z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    section.services img {
+        display: none;
+    }
+
+    section.services .image-container::before {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    section.services .container {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10px;
+        gap: 0px;
+    }
+
+    .srv div {
+        flex-direction: column;
+    }
+}
+/* services end */
