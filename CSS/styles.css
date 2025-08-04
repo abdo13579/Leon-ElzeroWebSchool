@@ -3,7 +3,7 @@
     --main-color: #10cab7;
     --secondary-color: #2c4755;
     --third-color: #575757;
-    --background-color: #f6f6f6;
+    --background-color: #fafafa;
     font-family: "Work Sans", Arial, Helvetica;
 }
 
@@ -22,11 +22,11 @@ p {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    color: #f6f6f6;
+    color: #f0f0f0;
     font-size: 160px;
     font-weight: 800;
     letter-spacing: -10px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .special > h2::selection {
@@ -72,7 +72,6 @@ p {
     }
 
     .special > p {
-        font-size: 12px;
         top: 39%;
     }
 }
@@ -421,3 +420,48 @@ section.services .image-container::before {
     }
 }
 /* services end */
+
+/* portfolio start */
+section.portfolio {
+    padding: 0 50px 50px 50px;
+    background-color: var(--background-color);
+}
+
+section.portfolio .container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+section.portfolio .box {
+    background-color: white;
+}
+
+section.portfolio .text {
+    padding: 20px;
+}
+
+section.portfolio .text h3 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1f2021;
+}
+
+section.portfolio .text p {
+    font-size: 15px;
+    color: #4d4c4c;
+}
+
+section.portfolio img {
+    width: 100%;
+    height: 250px;
+}
+
+@media (max-width: 768px) {
+    section.portfolio .container {
+        margin-top: 10px;
+    }
+}
+/* portfolio end */
