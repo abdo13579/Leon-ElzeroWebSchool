@@ -79,11 +79,20 @@ p {
 /* global end */
 
 /* container start */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 576px) {
+    .container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 @media (min-width: 576px) and (max-width: 768px) {
     .container {
         width: 540px;
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -92,32 +101,24 @@ p {
 @media (min-width: 768px) and (max-width: 992px) {
     .container {
         width: 720px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .container {
         width: 960px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
     .container {
         width: 1140px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 
 @media (min-width: 1400px) {
     .container {
         width: 1320px;
-        margin-left: auto;
-        margin-right: auto;
     }
 }
 /* container end */
@@ -332,7 +333,7 @@ section.work p::selection {
 
 /* services start */
 section.services {
-    padding: 0 50px 50px 50px;
+    padding-bottom: 100px;
 }
 
 section.services .container{
@@ -420,7 +421,7 @@ section.services .image-container::before {
 
 /* portfolio start */
 section.portfolio {
-    padding: 0 50px 50px 50px;
+    padding-bottom: 50px;
     background-color: var(--background-color);
 }
 
@@ -476,7 +477,7 @@ section.portfolio img {
 
 /* about start */
 section.about {
-    padding: 0 50px 50px 50px;
+    padding-bottom: 50px;
 }
 
 section.about .container {
@@ -497,6 +498,10 @@ section.about .container p:first-of-type {
     font-size: 20px;
     color: var(--secondary-color);
     margin-bottom: 40px;
+}
+
+hr {
+    width: 80%;
 }
 
 section.about .container p:last-of-type {
@@ -520,7 +525,7 @@ section.about .container .image-container::before {
     left: 0;
     width: 80px;
     height: calc(100% + 80px);
-    background-color: #fafafa;
+    background-color: var(--background-color);
     z-index: -1;
 }
 
@@ -534,11 +539,12 @@ section.about .container .image-container::after {
     border-left: 80px solid var(--main-color);
     border-bottom: 80px solid var(--main-color);
     z-index: -1;
-}
+} 
 
 @media (max-width: 1000px) {
     section.about .container {
         flex-wrap: wrap;
+        margin-top: -40px;
     }
 
     section.about .container .text {
@@ -547,19 +553,117 @@ section.about .container .image-container::after {
     }
 
     section.about .container .image-container {
-        margin: -100px auto 0px;
+        margin: 0 auto;
     }
 
-    section.about .container .image-container::before, section.about .container .image-container::after {
-        display: none;
-    }
-}
-
-@media (max-width: 576px) {
     section.about img {
         width: 300px;
         height: 300px;
     }
+
+    section.about .container .image-container::before,
+    section.about .container .image-container::after {
+        display: none;
+    }
+}
+/* about end */
+
+/* contact start */
+section.contact {
+    background-color: var(--background-color);
+    padding-bottom: 50px;
 }
 
-/* about end */
+section.contact .container {
+    margin-top: 100px;
+}
+
+section.contact .container h3 {
+    font-weight: 800;
+    font-size: 55px;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+section.contact .container h3::selection {
+    background-color: var(--main-color);
+}
+
+section.contact .container a {
+    display: block;
+    font-weight: 800;
+    font-size: 50px;
+    text-align: center;
+    color: var(--main-color);
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+section.contact .container a::selection {
+    background-color: white;
+}
+
+section.contact .container .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+section.contact .container .social::selection {
+    background-color: var(--main-color);
+}
+
+section.contact .container .social i {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+section.contact .container .social i:hover {
+    color: #3d6476
+}
+
+@media (max-width: 768px) {
+    section.contact .container {
+        margin-top: 0;
+    }
+
+    section.contact .container h3 {
+        font-size: 30px;
+    }
+
+    section.contact .container a {
+        font-size: 25px;
+    }
+
+
+}
+/* contact end */
+
+/* footer start */
+footer {
+    background-color: var(--secondary-color);
+    padding: 30px;
+}
+
+footer p {
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 1px
+}
+
+footer p::selection {
+    background-color: var(--main-color);
+}
+
+footer p span {
+    color: var(--main-color);
+}
+
+footer p span::selection {
+    color: var(--secondary-color);
+}
+/* footer end */
