@@ -33,7 +33,17 @@ To practice building a responsive modern website layout with clean design and re
 
 ## 📷 Live Preview
 
+Live website: [https://leon-elzerowebschool.netlify.app/](https://leon-elzerowebschool.netlify.app/)
 
+## 📥 How to Clone This Repo
+
+To clone this repository to your local machine, run the following command in your terminal:
+
+```bash
+git clone https://github.com/abdo13579/Leon-ElzeroWebSchool.git
+```
+
+Then open index.html in your browser
 
 ## ✅ Status
 
