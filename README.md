@@ -1,4 +1,4 @@
-# Leon Template - Elzero Web School (Template 1 of 5)
+# Leon Template - Elzero Web School (Template 1 of 4)
 
 This is the **first template** from [Elzero Web School](https://elzero.org)'s HTML & CSS practice series.  
 I built this project from scratch using **HTML5**, **CSS3**, and a bit of **JavaScript** to enhance the user interaction.
@@ -47,7 +47,7 @@ Then open index.html in your browser
 
 ## ✅ Status
 
-✅ Completed – Template 1 of 5 from Elzero Web School.
+✅ Completed – Template 1 of 4 from Elzero Web School.
 
 ---
 
