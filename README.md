@@ -54,4 +54,5 @@ Then open index.html in your browser
 ## 💡 Author
 
 - 👨‍💻 Developed by: **Abdulrahman Alhaythem**
-- 📚 Source: [Elzero Web School](https://elzero.org)
+- 📚 Tutorial Source: [Elzero Web School](https://elzero.org)
+- 🎨 psd Source: [Graphberry](https://www.graphberry.com/item/leon-psd-agency-template)
