@@ -33,7 +33,7 @@ To practice building a responsive modern website layout with clean design and re
 
 ## 📷 Live Preview
 
-Live website: [https://leon-elzerowebschool.netlify.app/](https://leon-elzerowebschool.netlify.app/)
+Live website: [https://abdo13579.github.io/Leon-ElzeroWebSchool/](https://abdo13579.github.io/Leon-ElzeroWebSchool/)
 
 ## 📥 How to Clone This Repo
 
